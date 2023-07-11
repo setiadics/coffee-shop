@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block contents %}
+<h1> ini adalah home page</h1>
+{% if request.user.is_authenticated %}
+    <h3>hai email anda adalah {{request.user.email}}</h3>
+    <a href="{% url 'accounts:logout' %}">logout</a>
+{% else %}
+    <a href="{% url 'accounts:signin' %}">login</a>
+{% endif %}
+{% endblock contents %}
