@@ -8,23 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- css style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sign-in.css">
   </head>
   <body>
     <div class="container">
-      <div class="form-sign-in">
-        <label for="email" class="email-label">Email</label>
-        <input type="text" id="email" class="email-input" placeholder="Input email...">
-        <label for="password" class="pasword-label">Email</label>
-        <input type="text" id="pasword" class="password-input" placeholder="Input email...">
-      </div>
       <div class="content">
-        <h1>Coffeeshop Xanyu</h1>
+        <h1>Coffeeshop XANSET</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae consequatur mollitia asperiores.</p>
-        <a href="#sign-in"> Sign-in</a>
+      </div>
+      <div class="form-sign-in">
+        <form action="home.html" method="post">
+          <label for="email" class="email-label">Email</label>
+          <input type="email" id="email" class="email-input" placeholder="Input email...">
+          <label for="password" class="pasword-label">Password</label>
+          <input type="password" id="pasword" class="password-input" placeholder="Input pasword...">
+          <a href=""><i data-feather="mail"></i></a>
+          <a href=""><i data-feather="facebook"></i></a>
+          <button>Sign-in</button>
+        </form>
+        <div class="btn-sign-up">
+          apakah anda sudah memiliki akun <a href="sign-up.html">Sign Up</a>
+        </div>
       </div>
     </div>
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>
