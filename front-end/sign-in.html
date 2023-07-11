@@ -17,23 +17,41 @@
   <body>
     <div class="container">
       <div class="content">
-        <h1>Coffeeshop XANSET</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae consequatur mollitia asperiores.</p>
+        <h1>Coffeeshop <span> XANSET</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas odit accusamus ut. Tenetur rem debitis voluptate molestiae.</p>
       </div>
-      <div class="form-sign-in">
-        <form action="home.html" method="post">
-          <label for="email" class="email-label">Email</label>
-          <input type="email" id="email" class="email-input" placeholder="Input email...">
-          <label for="password" class="pasword-label">Password</label>
-          <input type="password" id="pasword" class="password-input" placeholder="Input pasword...">
-          <a href=""><i data-feather="mail"></i></a>
-          <a href=""><i data-feather="facebook"></i></a>
-          <button>Sign-in</button>
+      <div class="signin-row">
+        <form class="signin-row-form" action="home.html">
+          <div class="signin-row-judul">
+            <h1>Sign-In <span>Akun</span></h1>
+          </div>
+          <div class="signin-form-label">
+            <label for="email">Email</label>
+          </div>
+          <div class="signin-form-input">
+            <i data-feather="mail"></i>
+            <input type="email" id="email" placeholder="Type of email...">
+          </div>
+          <div class="signin-form-label">
+            <label for="password">Password</label>
+          </div>
+          <div class="signin-form-input">
+            <i data-feather="lock"></i>
+            <input type="password" id="password" placeholder="Type of password...">
+          </div>
+          <div class="signin-form-sosmed">
+            <a href="#"><i data-feather="mail"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+          </div>
+          <div class="signin-btn">
+            <button class="signin-form-btn" type="submit">Sign In</button>
+          </div>
+          <div class="signup">
+            <p>apakah anda memiliki akun ? <a href="sign-up.html">Sign Up</a></p>
+          </div>
         </form>
-        <div class="btn-sign-up">
-          apakah anda sudah memiliki akun <a href="sign-up.html">Sign Up</a>
-        </div>
       </div>
+    </div>
     </div>
     <script>
       feather.replace()
