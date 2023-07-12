@@ -1,0 +1,82 @@
+:root {
+  --color: #ffffffff;
+  --cream: #dbc2af;
+  --cream-light: #d2b59a;
+  --cream-medium: #bd9c81;
+  --coffee: #b6895b;
+  --cream-high: #ab845e;
+  --burly-wood: #d3A776;
+  --sienna: #9c622b;
+  --dar-sienna: #84563c;
+  --dark-brown: #522c18;
+  --dark-olive-green: #24150f;
+  --shadow: rgba(1, 1, 3, 0.5); 
+  --bg: #01010101;
+  --glasses:#28282810;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', arial;
+  color: var(--color);
+  background-color: var(--bg);
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-olive-green);
+  border-bottom: 1px solid var(--dar-sienna);
+}
+
+.navbar-logo h1 {
+  color: var(--color);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.navbar-logo span {
+  color: var(--coffee);
+}
+
+.navbar-nav a {
+  margin: 0.8rem;
+  color: var(--color);
+}
+
+.navbar-nav a:hover{
+  color: var(--coffee);
+}
+
+.navbar-extra {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-extra-nav a{
+  color: var(--color);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.navbar-account a{
+  color: var(--color);
+}

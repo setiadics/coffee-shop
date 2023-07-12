@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
     <!-- icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <!-- css style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/home.css">
@@ -19,7 +18,7 @@
     <!-- Navbar start -->
     <nav class="container">
       <div class="navbar-logo">
-        <h1>Coffeeshop<Span>Xanset</Span>.</h1>
+        <h1>Coffeeshop<Span>xanset</Span>.</h1>
       </div>
       <div class="navbar-nav">
         <a href="home.html">Home</a>
@@ -27,14 +26,20 @@
         <a href="product.html">Product</a>
         <a href="contact">Contact</a>
       </div>
-      <div class="navbar-extra"></div>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
+      <div class="navbar-extra">
+        <div class="navbar-extra-nav">
+          <a href="" id="search"><i data-lucide="search"></i></a>
+          <a href="" id="shopping-cart"><i data-lucide="shopping-cart"></i></a>
+          <a href="" id="hamburger-menu"><i data-lucide="menu"></i></a>
+        </div>
+        <div class="navbar-account">
+          <a href="sign-in.html" id="navbar-akun"><i data-lucide="user-circle-2"></i></a>
+        </div>
+      </div>
     </nav>
     <!-- Navbar end -->
     <script>
-      feather.replace()
+      lucide.createIcons();
     </script>
   </body>
 </html>

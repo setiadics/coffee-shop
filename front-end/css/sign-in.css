@@ -45,11 +45,7 @@ body {
   gap: 0.5rem;
 }
 
-.content {
-
-}
-
-
+/* content */
 .content h1 {
   font-size: 5rem;
   font-weight: 700;
@@ -64,6 +60,18 @@ body {
   font-size: 0.8rem;
   font-weight: 100;
   mix-blend-mode: difference;
+}
+
+/* alert */
+.alert {
+  z-index: 9999;
+  position: absolute;
+  top: 0.5rem;
+  padding: 1.2rem;
+  background-color: #d2b59a6a;
+  backdrop-filter: blur(12px);
+  border-radius: 5px;
+  color: var(--dark-olive-green);
 }
 
 /* sign form */
